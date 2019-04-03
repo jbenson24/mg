@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img, embed,
+object, video{
+	max-width: 100%;
+}
+
+body{
+	margin: 0;
+ 	font-family: Arial, Helvetica, sans-serif;
+  	background-color: #217cc3;
+}
+
+.topnav{
+	overflow: hidden;
+  	background-color: #0b132d;
+	height: 125px;
+	padding-right: 10px;
+}
+
+#TopLogo{
+	width: 250px;
+	height: 125px;
+	padding-right: 10px;
+	float: left;
+}
+
+.topnav a{
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	margin-top: 70px;
+	text-decoration: none;
+	font-size: 20px;
+	width: 130px;
+}
+
+.topnav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active{
+	background-color: #217cc3;
+  	color: white;
+}
+
+#AddGarm, #EditGarm, #DeleteGarm{
+	float: left;
+	margin-right: 10px;
+}
+
+#MainLanding{
+	float: right;
+}
+
+#PretaggedGarms{
+	float:right;
+	margin-right: 10px;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #0b132d;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	font-size: 20px;
+}
+
+.sidebar a {
+	display: block;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+ 
+.sidebar a.active {
+	background-color: #217cc3;
+	color: white;
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: #ddd;
+	color: black;
+}
+
+div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+.GarmBody{
+  min-width: 80%;
+  height: 100%;
+  margin-left: 200px;
+}
+
+.GarmBody .bodyTitle{
+  margin-left: 200px;
+  font-size: 35px;
+  text-align: center;
+  padding: 30px;
+}

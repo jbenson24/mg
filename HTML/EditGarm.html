@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\CSS\EditGarm.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title>WC Garm Mgmt</title>
+</head>
+ 
+<body>
+	<div class="topnav">
+		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\img/Logo.jpg" alt="">
+			<a id="AddGarm" href="AddGarment.html">Add</a>
+			<a class="active" id="EditGarm" href="EditGarment.html">Edit</a>
+			<a id="DeleteGarm" href="DeleteGarment.html">Delete</a>
+			<a id="MainLanding" href="MainLanding.html">Exit</a>
+			<a id="PretaggedGarms" href="PreTaggedGarments.html">PreTagged</a>
+	</div>			
+	
+	<div class="sidebar">
+		<a class="active" href="#Garments">Garments</a>
+		<a href="#Employee">Employee</a>
+		<a href="#Activity">Activity</a>
+		<a href="#OrdersAndPurchases">Orders/Purchases</a>
+		<a href="#Cleaning">Cleaning</a>
+		<a href="#Repairs">Repairs</a>
+		<a href="#Reports">Reports</a>
+	</div>
+
+	<div class="container">
+		<h1>Edit Garment: </h1>
+
+		<div class="GarmSearch">
+			<h2>Search</h2>	
+			<input id="GarmIDSearch" type="text" placeholder="GarmID...">
+			<input id="DepartmentSearch" type="text" placeholder="Department...">
+			<input id="RfidBarcodeSearch" type="text" placeholder="RFID/Barcode...">
+			<input id="JobSearch" type="text" placeholder="Job...">
+		</div>
+
+		<div class="row1">
+			<h2>Garment Information</h2>
+			
+			<div class="column">
+				
+				<div class="inner-wrap">
+					<label>Garment ID <br> <input type="text" name="GarmID" /></label>
+						<br>
+					<label>Manufactuer <br> <input type="text" name="ManuID" /></label>
+						<br>
+					<label>RFID/Barcode <br> <input type="text" name="RFIDBarcodeID" /></label>
+						<br>
+					<label>Cost <br> <input type="number" min="1" step="any" name="CostID"/></label>
+						<br>
+				</div>
+			</div>
+
+			<div class="column">	
+				<div class="inner-wrap">
+					<label>Department <br> <input type="text" name="DeptID" /></label>
+						<br>
+					<label>Job <br> <input type="text" name="JobID" /></label>
+						<br>
+					<label>Garment Type <br> <input type="text" name="GarmTypeID" /></label>
+						<br>
+					<label>Garment Style <br> <input type="text" name="GarmStyleID"/></label>
+						<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="row2">
+			<h2>Garment Description</h2>		
+
+			<div class="column">
+
+				<div class="inner-wrap">
+					<label>Garment Size </label>
+					<br> 
+						<select>
+							<option value="xsmall">X-Small</option>
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+							<option value="xlarge">X-Large</option>
+							<option value="xxlarge">XX-Large</option>
+						</select>
+						<br>
+						<br>
+					<label>Cleaner </label>
+						<br> 
+							<select>
+								<option value="cleanerName">CleanerName</option>
+								<option value="cleanerName">CleanerName</option>
+								<option value="cleanerName">CleanerName</option>
+							</select>	
+
+						<br>
+				</div>
+			</div>
+
+			<div class="column" id="SizeColumn">
+				<div class="inner-wrap"> 
+					<form action="" class="GenderForm">
+						<label>Gender</label> 
+							<br>
+								<input type="radio" name="gender" value="male"> Male <br>
+								<input type="radio" name="gender" value="female"> Female <br>
+								<input type="radio" name="gender" value="other"> Other
+					</form>
+					<br>
+				</div>
+			</div>
+			
+			<div class="column" id="LenMaxCleanColumn">
+				<div class="inner-wrap">
+					<label>Length <br> <input type="text" name="LengthID" style="width: 75px;" /></label>
+						<br>
+						<br>
+					<label>Max # of Cleanings <br> <input type="number" min="1" step="any" name="NumCleaningID" style="width: 75px;" /></label>
+				</div>
+			</div>
+		
+			<div class="column">
+				<div class="inner-wrap">
+					<form action="">
+						<label>MultiUse</label> 
+							<br>
+								<input type="radio" name="MultiUse" value="male"> Yes
+								<input type="radio" name="MultiUse" value="female"> No
+					</form>
+				<br>
+					<label>Life Expectancy <br> <input type="text" name="LifeID" style="width: 75px;" /></label>
+				</div>
+			</div>
+
+			<label for="Comments"></label>
+	   		<textarea id="Comments" name="comments" placeholder="Add Comments" style="height:200px"></textarea>
+
+		</div>
+
+	    
+
+		<button id="AddButton" type="button">Edit</button>
+			
+	</div>
+
+
+</body>
+</html>
