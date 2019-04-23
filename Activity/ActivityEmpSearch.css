@@ -115,3 +115,98 @@ div.content{
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
 }
+
+.container{
+  margin-left: 200px;
+  font-size: 35px;
+  height: 100%;
+}
+
+.container h1{
+	text-align: center;
+}
+
+.container h2{
+	text-align: center;
+}
+
+.EmpIDInfo{
+	text-align: center;
+	width: 95%;
+}
+
+.EmpIDInfo #SearchButton{
+	font-size: 15px;
+}
+
+.container label{
+	font-size: 15px;
+}
+
+.column .EmpJobGarmTable{
+  margin-top: 35px;
+  margin-left: 10px;
+  width: 80%;
+}
+
+.column .EmpJobGarmTable thead tr{
+  background-color:  #dddddd;
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding-right: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #dddddd;
+}
+
+.row-1{
+	height: 250px;
+	width: 100%;
+}
+
+.row-1 .column-1{
+	width: 50%;
+	float: left;
+}
+
+.row-1 .column-2{
+	width: 45%;
+	float: right;
+	font-size: 15px;
+}
+
+.row-2{
+	font-size: 15px;
+	width: 100%;
+}
+
+.row-2 .column-1{
+	width: 45%;
+	float: left;
+	font-size: 15px;
+}
+
+.row-2 .column-1 #AssignButton{
+	float: right;
+	margin-right: 15px;
+}
+
+.row-2 .column-2{
+	width: 45%;
+	float: right;
+}
+
+.row-2 .column-2 #UnassignButton{
+	float: right;
+	margin-right: 15px;
+}

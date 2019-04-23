@@ -52,15 +52,25 @@ body{
   	color: white;
 }
 
-.topnav #LoanerAct, #OneForOne{
+#NewOrder, #Reorder, #Purchases, #FindOrder{
 	float: left;
+	margin-right: 10px;
 }
 
-#Index, #Back{
+#FindOrder{
+	width: 140px;
+}
+
+#home{
 	float: right;
 }
 
-.sidebar {
+#OrdersPurchasesLanding{
+	float: right;
+	margin-right: 10px;
+}
+
+.sidebar{
 	margin: 0;
 	padding: 0;
 	width: 200px;
@@ -71,18 +81,12 @@ body{
 	font-size: 20px;
 }
 
-.sidebar a {
+.sidebar a{
 	display: block;
 	color: white;
 	padding: 16px;
 	text-decoration: none;
 	margin-bottom: 10px;
-}
-
-.dropdown-container {
-  display: none;
-  background-color: #0b132d;
-  padding-left: 8px;
 }
  
 .sidebar a.active{
@@ -93,11 +97,6 @@ body{
 .sidebar a:hover:not(.active){
 	background-color: #ddd;
 	color: black;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 div.content{

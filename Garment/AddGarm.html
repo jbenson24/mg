@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\ScreenSkeleton.css">
+	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\AddGarm.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 <title>WC Garm Mgmt</title>
 </head>
@@ -13,17 +14,15 @@
 <body>
 	<div class="topnav">
 		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Logo.jpg" alt="">
-
-		<a id="Index" href="Index.html">Exit</a>
+			<a class="active" id="AddGarm" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\AddGarm.html">Add</a>
+			<a id="EditGarm" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\EditGarm.html">Edit</a>
+			<a id="DeleteGarm" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\DeleteGarm.html">Delete</a>
+			<a id="Index" href="Index.html">Exit</a>
+			<a id="Back" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\GarmSearchPage.html">Back</a>
 	</div>			
 	
 	<div class="sidebar">
-		<a class="dropdown">Garment</a>
-			<div class="dropdown-container">
-				<a id="AddGarmentMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\AddGarm.html">Add</a>
-				<a id="EditGarmentMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\EditGarm.html">Edit</a>
-				<a id="DeleteGarmentMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\DeleteGarm.html">Delete</a>
-			</div>
+		<a class="active">Garment</a>
 		<a class="dropdown">Employee</a>
 			<div class="dropdown-container">
 				<a id="SearchEmp" href="C:/Users/gaine/OneDrive/Desktop/Database%20Stuff/Webpages/Employee/EmployeeGarmentSearch.html">Search Employee</a>
@@ -68,6 +67,119 @@
 		<a href="#Reports">Reports</a>
 	</div>
 
+<!-- 	<div class="bodyTitle">
+		Add Garment:
+	</div> -->
+	<div class="container">
+		<h1>Add Garment: </h1>
+		
+		<div class="row1">
+			<h2>Garment Information</h2>
+			
+			<div class="column">
+				
+				<div class="inner-wrap">
+					<label>Garment ID <br> <input type="text" name="GarmID" /></label>
+						<br>
+					<label>Manufactuer <br> <input type="text" name="ManuID" /></label>
+						<br>
+					<label>RFID/Barcode <br> <input type="text" name="RFIDBarcodeID" /></label>
+						<br>
+					<label>Cost <br> <input type="number" min="1" step="any" name="CostID"/></label>
+						<br>
+				</div>
+			</div>
+
+			<div class="column">	
+				<div class="inner-wrap">
+					<label>Department <br> <input type="text" name="DeptID" /></label>
+						<br>
+					<label>Job <br> <input type="text" name="JobID" /></label>
+						<br>
+					<label>Garment Type <br> <input type="text" name="GarmTypeID" /></label>
+						<br>
+					<label>Garment Style <br> <input type="text" name="GarmStyleID"/></label>
+						<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="row2">
+			<h2>Garment Description</h2>		
+
+			<div class="column">
+
+				<div class="inner-wrap">
+					<label>Garment Size </label>
+					<br> 
+						<select>
+							<option value="xsmall">X-Small</option>
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+							<option value="xlarge">X-Large</option>
+							<option value="xxlarge">XX-Large</option>
+						</select>
+						<br>
+						<br>
+					<label>Cleaner </label>
+						<br> 
+							<select>
+								<option value="cleanerName">CleanerName</option>
+								<option value="cleanerName">CleanerName</option>
+								<option value="cleanerName">CleanerName</option>
+							</select>	
+
+						<br>
+				</div>
+			</div>
+
+			<div class="column" id="SizeColumn">
+				<div class="inner-wrap"> 
+					<form action="" class="GenderForm">
+						<label>Gender</label> 
+							<br>
+								<input type="radio" name="gender" value="male"> Male <br>
+								<input type="radio" name="gender" value="female"> Female <br>
+								<input type="radio" name="gender" value="other"> Other
+					</form>
+					<br>
+				</div>
+			</div>
+			
+			<div class="column" id="LenMaxCleanColumn">
+				<div class="inner-wrap">
+					<label>Length <br> <input type="text" name="LengthID" style="width: 75px;" /></label>
+						<br>
+						<br>
+					<label>Max # of Cleanings <br> <input type="number" min="1" step="any" name="NumCleaningID" style="width: 75px;" /></label>
+				</div>
+			</div>
+		
+			<div class="column">
+				<div class="inner-wrap">
+					<form action="">
+						<label>MultiUse</label> 
+							<br>
+								<input type="radio" name="MultiUse" value="YesMultiUse"> Yes
+								<input type="radio" name="MultiUse" value="NoMultiUse"> No
+					</form>
+				<br>
+					<label>Life Expectancy <br> <input type="text" name="LifeID" style="width: 75px;" /></label>
+				</div>
+			</div>
+
+			<label for="Comments"></label>
+	   		<textarea id="Comments" name="comments" placeholder="Add Comments" style="height:200px"></textarea>
+
+		</div>
+
+	    
+
+		<button id="AddButton" type="button">Add</button>
+			<br>
+	</div>
+
 <script>
 var dropdown = document.getElementsByClassName("dropdown");
 var i;
@@ -94,5 +206,4 @@ function ShippmentConfirmation() {
 </script>
 
 </body>
-
 </html>

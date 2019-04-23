@@ -52,7 +52,7 @@ body{
   	color: white;
 }
 
-.topnav #LoanerAct, #OneForOne{
+.topnav #AddEmployee, #EditEmployee, #DeleteEmployee{
 	float: left;
 }
 
@@ -100,18 +100,127 @@ body{
   .sidenav a {font-size: 18px;}
 }
 
-div.content{
-	margin-left: 200px;
-	padding: 1px 16px;
-	height: 1000px;
+.container{
+  font-size: 35px;
+  text-align: center;
+  padding: 30px;
+  width: 98%;
+  height: 100%;
+/*  margin-left: 200px; */
 }
 
-@media screen and (max-width: 700px){
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+.container h1{
+	margin-left: 200px;
+	text-align: center;
 }
+
+.container h2{
+	text-align: left;
+}
+
+.container .inner-wrap{
+	height: 100%;
+}
+
+.row1 label{
+	max-width: 200px;
+	height: 100px;
+	font-size: 20px;
+}
+
+.row1{
+	margin-left: 200px;
+	width: 90%;
+	border: 3px solid black;
+	height: 635px;
+}
+
+.row1 .column-1{
+	float: left;
+	width: 33.3%;
+}
+
+.row1 .column-2{
+	display: inline-block;
+	width: 33.3%;
+}
+
+.row1 .column-2 #EmpAddress{
+	width: 90%;
+	font-size: 20px;
+	height: 80px;
+}
+
+.row1 .column-3{
+	float: right;
+	width: 33.3%;
+}
+
+.row2{
+	margin-left: 200px;
+	width: 90%;
+	border: 3px solid black;
+	border-bottom: none;
+	height: 235px;
+	font-size: 20px;
+}
+
+
+.row2 .column-1{
+	width: 20%;
+	float: left;
+}
+
+.row2 .column-2{
+	width: 20%;
+	float: left;
+}
+
+.row2 .column-3{
+	width: 20%;
+	float: left;
+}
+
+.row2 .column-4{
+	width: 20%;
+	float: left;
+}
+
+.row2 textarea{
+	width: 50%;
+}
+
+.row3{
+	margin-left: 200px;
+	width: 90%;
+	border: 3px solid black;
+	border-top: none;
+	height: 330px;
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+.row3 textarea{
+	width: 45%;
+}
+
+#EditEmp{
+	margin-top: 50px;
+	width: 150px;
+	float: right;
+	margin-right: 60px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+

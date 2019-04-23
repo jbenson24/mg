@@ -18,6 +18,12 @@ body{
   	background-color: #217cc3;
 }
 
+body{
+	margin: 0;
+ 	font-family: Arial, Helvetica, sans-serif;
+  	background-color: #217cc3;
+}
+
 .topnav{
 	overflow: hidden;
   	background-color: #0b132d;
@@ -52,21 +58,15 @@ body{
   	color: white;
 }
 
-#AddGarm, #EditGarm, #DeleteGarm{
+.topnav #AddRepairs, #FindRepairs, #CompleteRepairs{
 	float: left;
-	margin-right: 10px;
 }
 
-#MainLanding{
+#Index{
 	float: right;
 }
 
-#PretaggedGarms{
-	float:right;
-	margin-right: 10px;
-}
-
-.sidebar{
+.sidebar {
 	margin: 0;
 	padding: 0;
 	width: 200px;
@@ -77,12 +77,18 @@ body{
 	font-size: 20px;
 }
 
-.sidebar a{
+.sidebar a {
 	display: block;
 	color: white;
 	padding: 16px;
 	text-decoration: none;
 	margin-bottom: 10px;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #0b132d;
+  padding-left: 8px;
 }
  
 .sidebar a.active{
@@ -93,6 +99,11 @@ body{
 .sidebar a:hover:not(.active){
 	background-color: #ddd;
 	color: black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 div.content{
@@ -112,80 +123,87 @@ div.content{
 }
 
 .container{
-  font-size: 35px;
-  text-align: center;
-  padding: 30px;
-  width: 90%;
-  height: 100%;
-  margin-left: 200px;
+	width: 100%;
 }
 
 .container h1{
 	text-align: center;
+	margin-left: 200px;
 }
 
-.container h2{
-	text-align: left;
+.row-1{
+	width: 100%;
+	height: 390px;
 }
 
-.container .inner-wrap{
-	height: 100%;
+.row-1 .column-1{
+	width: 50%;
+	float: left;
+	padding-left: 200px;
+	padding-right: 15px;
 }
 
-.row1{
-	margin: auto;
-	width: 70%;
-	border: 3px solid black;
-	height: 535px;
+.row-1 .column-1 .inner-wrapper{
+	margin-left: 10%;
+	width: 100%;
 }
 
-.row2{
-	margin: auto;
-	width: 70%;
-	border: 3px solid black;
-	height: 500px;
-	font-size: 20px;
-	margin-top: 15px;
+.row-1 .column-1 label{
+	width: 20px;
 }
 
-.column{
-  float: left;
-  width: 50%;
-  padding: 10px;
+.row-1 .column-2{
+	float: right;
+	width: 50%;
+	height: 310px;
 }
 
-.column label{
-	max-width: 200px;
-	height: 100px;
-	font-size: 20px;
+.row-1 .column-2 .inner-wrapper{
+	float: right;
+	margin-right: 15%;
+	width: 50%;
 }
 
-.row2 .column{
-	width: 25%;
-	height: 220px;
+.row-1 .column-2 label{
+	padding-bottom: 10px;
 }
 
-.row2 #SizeColumn{
-	height: 175px;
+.row-1 .column-2 textarea{
+	margin-top: 10px;
 }
 
-.row2 #Comments{
-	width: 600px;
+.row-2{
+	padding-left: 20%;
+	height: 300px;
+	text-align: center;
+	margin-top: 20px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row-2 h2{
+	text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.row-2 .SearchTableResults{
+  margin-left: 15px;
+  width: 85%;
 }
 
-#AddButton{
-	margin-top: 50px;
-	width: 150px;
+.row-2 .SearchTableResults thead tr{
+  background-color:  #dddddd;
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding-right: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #dddddd;
 }

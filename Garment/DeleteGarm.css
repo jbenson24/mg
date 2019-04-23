@@ -52,7 +52,7 @@ body{
   	color: white;
 }
 
-.topnav #LoanerAct, #OneForOne{
+.topnav #AddGarm, #EditGarm, #DeleteGarm{
 	float: left;
 }
 
@@ -114,4 +114,83 @@ div.content{
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+}
+
+.container{
+  font-size: 35px;
+  text-align: center;
+  padding: 30px;
+  width: 90%;
+  height: 100%;
+  margin-left: 200px;
+}
+
+.container h1{
+	text-align: center;
+}
+
+.container h2{
+	text-align: left;
+}
+
+.container .inner-wrap{
+	height: 100%;
+}
+
+.row1{
+	margin: auto;
+	width: 70%;
+	border: 3px solid black;
+	height: 410px;
+}
+
+.row2{
+	margin: auto;
+	width: 70%;
+	border: 3px solid black;
+	height: 175px;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column label{
+	max-width: 200px;
+	height: 100px;
+	font-size: 20px;
+}
+
+.row2 .column{
+	width: 25%;
+	height: 100px;
+}
+
+.row2 #SizeColumn{
+	height: 175px;
+}
+
+.row2 #Comments{
+	width: 600px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#AddButton{
+	margin-top: 15px;
+	width: 150px;
 }

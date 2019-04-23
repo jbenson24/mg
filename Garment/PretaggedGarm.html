@@ -4,31 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\CSS\GarmSearchPage.css">
+	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\PretaggedGarm.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  $("#myInput").on("keyup", function() {
-		    var value = $(this).val().toLowerCase();
-		    $("#myTable tr").filter(function() {
-		      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-		    });
-		  });
-		});
-</script>
 
 <title>WC Garm Mgmt</title>
 </head>
  
 <body>
 	<div class="topnav">
-		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\img/Logo.jpg" alt="">
+		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Logo.jpg" alt="">
 			<a id="AddGarm" href="AddGarment.html">Add</a>
 			<a id="EditGarm" href="EditGarment.html">Edit</a>
 			<a id="DeleteGarm" href="DeleteGarment.html">Delete</a>
 			<a id="MainLanding" href="MainLanding.html">Exit</a>
-			<a id="PretaggedGarms" href="PreTaggedGarments.html">PreTagged</a>
+			<a class="active" id="PretaggedGarms" href="PreTaggedGarments.html">PreTagged</a>
 	</div>			
 	
 	<div class="sidebar">
@@ -43,35 +32,36 @@
 
 	<div class="GarmBody">
 		<div class="bodyTitle">
-			Garment Inventory Search:
+			Pretagged Inventory Search:
 		</div>
 
 		<div class="GarmSearch">
 			<h2>Search</h2>
 
-			<input id="GarmIDSearch" type="text" placeholder="GarmID...">
-			<input id="DepartmentSearch" type="text" placeholder="Department...">
-			<input id="AltIDSearch" type="text" placeholder="Alt ID...">
-			<br>
+			<input id="GarmIDSearch" type="text" placeholder="Garm ID...">
 			<input id="RfidBarcodeSearch" type="text" placeholder="RFID/Barcode...">
-			<input id="JobSearch" type="text" placeholder="Job...">
+			<input id="OrderNumSearch" type="text" placeholder="Order Num...">
+			<input id="AltIDSearch" type="text" placeholder="Alt ID...">
 		</div>
 
 		<div class="SearchTableResults">
+
+		<!--
+			GarmID, Style, Type, Size, Location, OrderNum, Arrival DateTime (Timestamp),
+			Gender
+		-->
 			<h2>Search Results</h2>
 			<table>
 				<thead>
 				<tr>
 					<th>Garment ID</th>
-					<th>Employee ID</th>
-					<th>Slot</th>
-					<th>RFID/Barcode</th>
-					<th>Department/Job</th>
+					<th>Order Num</th>
+					<th>Arrival DateTime</th>
 					<th>Type</th>
 					<th>Style</th>
-					<th>Length</th>
-					<th>Alt ID</th>
-					<th>Missing</th> 
+					<th>Size</th>
+					<th>Gender</th>
+					<th>Location</th>
 				</tr>
 				</thead>
 
@@ -79,50 +69,42 @@
 					<tr>
 						<th>0001</th>
 						<th>1063</th>
-						<th>03</th>
-						<th>01122652565</th>
-						<th>Culinary/Chef</th>
+						<th>11:13:00-4-30-2019</th>
 						<th>Shirt</th>
 						<th>T-Shirt</th>
 						<th>Medium</th>
-						<th>Null</th>
-						<th>Null</th>
-					</tr>
-					<tr>
-						<th>0002</th>
-						<th>1063</th>
-						<th>03</th>
-						<th>12223452565</th>
-						<th>Culinary/Chef</th>
-						<th>Pants</th>
-						<th>Black</th>
-						<th>Medium</th>
-						<th>Null</th>
-						<th>Null</th>
+						<th>Mens</th>
+						<th>Laundry</th>
 					</tr>
 					<tr>
 						<th>0001</th>
 						<th>1063</th>
-						<th>03</th>
-						<th>01122652565</th>
-						<th>Culinary/Chef</th>
+						<th>11:13:00-4-30-2019</th>
 						<th>Shirt</th>
 						<th>T-Shirt</th>
-						<th>Mediumn</th>
-						<th>Null</th>
-						<th>Null</th>
+						<th>Medium</th>
+						<th>Mens</th>
+						<th>Laundry</th>
 					</tr>
 					<tr>
 						<th>0001</th>
 						<th>1063</th>
-						<th>03</th>
-						<th>01122652565</th>
-						<th>Culinary/Chef</th>
+						<th>11:13:00-4-30-2019</th>
 						<th>Shirt</th>
 						<th>T-Shirt</th>
 						<th>Medium</th>
-						<th>Null</th>
-						<th>Null</th>
+						<th>Mens</th>
+						<th>Laundry</th>
+					</tr>
+					<tr>
+						<th>0001</th>
+						<th>1063</th>
+						<th>11:13:00-4-30-2019</th>
+						<th>Shirt</th>
+						<th>T-Shirt</th>
+						<th>Medium</th>
+						<th>Mens</th>
+						<th>Laundry</th>
 					</tr>
 				</tbody>
 			</table>
@@ -131,5 +113,12 @@
 	</div>
 
 
+
+
+
+
+
 </body>
+
+
 </html>

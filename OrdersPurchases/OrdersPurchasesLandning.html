@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\OrdersPurchases\OrdersPurchasesLanding.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title>WC Garm Mgmt</title>
+</head>
+ 
+<body>
+	<div class="topnav">
+		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Logo.jpg" alt="">
+		<a id="EmpLanding" href="Index.html">Exit</a>
+	</div>			
+	
+	<div class="sidebar">
+		<a href="#Garments">Garments</a>
+		<a href="#Employee">Employee</a>
+		<a href="#Activity">Activity</a>
+		<a class="active" href="#OrdersAndPurchases">Orders/Purchases</a>
+		<a href="#Cleaning">Cleaning</a>
+		<a href="#Repairs">Repairs</a>
+		<a href="#Reports">Reports</a>
+	</div>
+	
+	<div class="container">
+		<h1>Orders and Purchases</h1>
+	
+		<div class="row-1">
+			<div class="column-1">
+				<div class="inner-wrapper">
+					<h3>Search: </h3>
+					<label id="EmpIDSearch">Employee ID <br> <input type="text" name="EmpIDSearch" /></label>
+						<br>
+					<label id="GarmIDSearch">Garment ID <br> <input type="text" name="GarmIDSearch" /></label>
+						<br>
+					<button id="SearchButton">Search</button>
+				</div>
+			</div>
+
+			<div class="column-2">
+				<div class="inner-wrapper">
+					<div class="TotalOrdersPurchasesTable">
+						
+						
+						<table>
+							<h2>Total Orders and Purchases</h2>
+							<select>
+								<option value="All">All</option>
+								<option value="EmpOrders">Emp Orders</option>
+								<option value="EmpPurchases">Emp Purchases</option>
+								<option value="GarmOrders">Garm Orders</option>
+								<option value="GarmPurchases">Garm Purchases</option>
+							</select>
+								<br>
+							<thead>
+								<tr>
+									<th>Garm ID</th>
+									<th>Emp ID</th>
+									<th>Slot</th>
+									<th>Type</th>
+									<th>Style</th>
+									<th>Size</th>
+									<th>Len</th>
+									<th>Alt ID</th>
+									<th>RFID/Barcode</th>
+									<th>Quantity</th>
+								</tr>
+							</thead>
+
+							<tbody id="OrdersPurchasesResults">
+								<tr>
+									<th>15258</th>
+									<th>01289</th>
+									<th>5</th>
+									<th>Shirt</th>
+									<th>Tshirt</th>
+									<th>M</th>
+									<th>  </th>
+									<th>  </th>
+									<th>546365467</th>
+									<th>5</th>
+								</tr>
+								<tr>
+									<th>15258</th>
+									<th>01289</th>
+									<th>5</th>
+									<th>Shirt</th>
+									<th>Tshirt</th>
+									<th>M</th>
+									<th>  </th>
+									<th>  </th>
+									<th>546365467</th>
+									<th>5</th>
+								</tr>
+								<tr>
+									<th>15258</th>
+									<th>01289</th>
+									<th>5</th>
+									<th>Shirt</th>
+									<th>Tshirt</th>
+									<th>M</th>
+									<th>  </th>
+									<th>  </th>
+									<th>546365467</th>
+									<th>5</th>
+								</tr>
+								<tr>
+									<th>15258</th>
+									<th>01289</th>
+									<th>5</th>
+									<th>Shirt</th>
+									<th>Tshirt</th>
+									<th>M</th>
+									<th>  </th>
+									<th>  </th>
+									<th>546365467</th>
+									<th>5</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

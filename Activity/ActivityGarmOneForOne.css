@@ -52,21 +52,15 @@ body{
   	color: white;
 }
 
-#AddGarm, #EditGarm, #DeleteGarm{
+.topnav #LoanerAct, #OneForOne{
 	float: left;
-	margin-right: 10px;
 }
 
-#MainLanding{
+#Index, #Back{
 	float: right;
 }
 
-#PretaggedGarms{
-	float:right;
-	margin-right: 10px;
-}
-
-.sidebar{
+.sidebar {
 	margin: 0;
 	padding: 0;
 	width: 200px;
@@ -77,12 +71,18 @@ body{
 	font-size: 20px;
 }
 
-.sidebar a{
+.sidebar a {
 	display: block;
 	color: white;
 	padding: 16px;
 	text-decoration: none;
 	margin-bottom: 10px;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #0b132d;
+  padding-left: 8px;
 }
  
 .sidebar a.active{
@@ -93,6 +93,11 @@ body{
 .sidebar a:hover:not(.active){
 	background-color: #ddd;
 	color: black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 div.content{
@@ -112,80 +117,76 @@ div.content{
 }
 
 .container{
-  font-size: 35px;
-  text-align: center;
-  padding: 30px;
-  width: 90%;
-  height: 100%;
-  margin-left: 200px;
-}
-
-.container h1{
-	text-align: center;
+	width: 100%;
 }
 
 .container h2{
-	text-align: left;
+	text-align: center;
+	margin-left: 100px;
 }
 
-.container .inner-wrap{
-	height: 100%;
+.row-1{
+	height: 300px;
 }
 
-.row1{
-	margin: auto;
-	width: 70%;
-	border: 3px solid black;
-	height: 410px;
+.row-1 .column-1{
+	padding-left: 210px;
+	width: 40%;
+	float: left;
 }
 
-.row2{
-	margin: auto;
-	width: 70%;
-	border: 3px solid black;
-	height: 175px;
-	font-size: 20px;
-	margin-top: 15px;
+.row-1 .container label{
+	padding: 10px;
 }
 
-.column{
-  float: left;
+.row-1 .column-2{
+  margin-top: 35px;
   width: 50%;
-  padding: 10px;
+  float: right;
+  padding-right: 15px;
 }
 
-.column label{
-	max-width: 200px;
-	height: 100px;
-	font-size: 20px;
+.row-1 .column-2 .EmpJobGarmTable thead tr{
+  background-color:  #dddddd;
 }
 
-.row2 .column{
-	width: 25%;
-	height: 100px;
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.row2 #SizeColumn{
-	height: 175px;
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding-right: 8px;
 }
 
-.row2 #Comments{
-	width: 600px;
+tr:nth-child(even){
+  background-color: #dddddd;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row-2{
+	width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.row-2 .column-1{
+	padding-left: 210px;
+	width: 40%;
+	float: left;
 }
 
-#AddButton{
+.row-2 .column-1 #OneForOneButton{
 	margin-top: 15px;
-	width: 150px;
+}
+
+.row-2 .column-2{
+  margin-top: 15px;
+  width: 50%;
+  float: right;
+  padding-right: 15px;
+}
+
+.row-2 .column-2 .EmpJobGarmTable thead tr{
+  background-color:  #dddddd;
 }

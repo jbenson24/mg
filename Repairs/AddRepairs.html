@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\ScreenSkeleton.css">
+	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\AddRepairs.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <title>WC Garm Mgmt</title>
@@ -13,7 +13,9 @@
 <body>
 	<div class="topnav">
 		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Logo.jpg" alt="">
-
+		<a id="AddRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\AddRepairs.html">Add</a>
+		<a id="FindRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\FindRepairs.html">Find</a>
+		<a id="CompleteRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\CompleteRepairs.html">Complete</a>
 		<a id="Index" href="Index.html">Exit</a>
 	</div>			
 	
@@ -26,7 +28,6 @@
 			</div>
 		<a class="dropdown">Employee</a>
 			<div class="dropdown-container">
-				<a id="SearchEmp" href="C:/Users/gaine/OneDrive/Desktop/Database%20Stuff/Webpages/Employee/EmployeeGarmentSearch.html">Search Employee</a>
 				<a id="AddEmployeeMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeAdd.html">Add</a>
 				<a id="EditEmployeeMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeEdit.html">Edit</a>
 				<a id="DeleteEmployeeMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeDelete.html">Delete</a>
@@ -59,14 +60,128 @@
 				<a id="RecleanCleaning" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Cleaning\CleaningReclean.html">Reclean</a>
 				<a id="ReceivedCleaning" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Cleaning\CleaningReceived.html">Received</a>
 			</div>
-		<a class="dropdown">Repairs</a>
-			<div class="dropdown-container">
-				<a id="AddRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\AddRepairs.html">Add</a>
-				<a id="FindRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\FindRepairs.html">Find</a>
-				<a id="CompleteRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\CompleteRepairs.html">Complete</a>
-			</div>
+		<a class="active">Repairs</a>
 		<a href="#Reports">Reports</a>
 	</div>
+
+
+	<div class="container">
+
+		<h1>Add Repairs</h1>
+
+		<div class="row-1">
+			<div class="column-1">
+				<div class="inner-wrapper">
+						<br>
+					<label id="GarmID">Garment ID <input type="text" name="GarmID"></label>
+						<br>
+					<label id="EmpID">Employee ID <input type="text" name="EmpID"></label>
+						<br>
+					<div class="SearchButtons">
+						<button id="AllButton">All</button>
+						<button id="SearchButton">Search</button>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="column-2">
+				<div class="inner-wrapper">
+					<h2>Results</h2>
+					Name <input type="text" name="Location">
+					GarmID <input type="text" name="GarmID">
+					EmpID <input type="text" name="EmpID">
+					Garm Description <input type="text" name="GarmDesc">
+					Repair Type <select>
+									<option>Size In</option>
+									<option>Size Out</option>
+									<option>Rip/Tear</option>
+									<option>Missing Button</option>
+								</select>
+						<br>
+
+					<label for="Comments"></label>
+	   				<textarea id="Comments" name="comments" placeholder="Add Comments" style="height:150px; width:300px;"></textarea>
+	   					<br>
+	   				<button id="AddButton">Add</button>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row-2">
+			<div class="SearchTableResults">
+				<h2>All Repairs</h2>
+				<table>
+					<thead>
+					<tr>
+						<th>GarmentID</th>
+						<th>Employee ID</th>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Size/Length</th>
+						<th>RFID/Barcode</th>
+						<th>Timestamp</th>
+						<th>Comments</th>
+						<th>Repairs</th>
+					</tr>
+					</thead>
+
+					<tbody id="TableResults">
+						<tr>
+							<th>0001</th>
+							<th>1063</th>
+							<th>Nancy Drew</th>
+							<th>Chef Shirt/Tshirt</th>
+							<th>M</th>
+							<th>0923840238</th>
+							<th>07/30/2019 3:02:39</th>
+							<th> None </th>
+							<th>Missing Buttons</th>
+						</tr>
+						<tr>
+							<th>0001</th>
+							<th>1063</th>
+							<th>Nancy Drew</th>
+							<th>Chef Shirt/Tshirt</th>
+							<th>M</th>
+							<th>0923840238</th>
+							<th>07/30/2019 3:02:39</th>
+							<th> None </th>
+							<th>Missing Buttons</th>
+						</tr>
+						<tr>
+							<th>0001</th>
+							<th>1063</th>
+							<th>Nancy Drew</th>
+							<th>Chef Shirt/Tshirt</th>
+							<th>M</th>
+							<th>0923840238</th>
+							<th>07/30/2019 3:02:39</th>
+							<th> None </th>
+							<th>Missing Buttons</th>
+						</tr>
+						<tr>
+							<th>0001</th>
+							<th>1063</th>
+							<th>Nancy Drew</th>
+							<th>Chef Shirt/Tshirt</th>
+							<th>M</th>
+							<th>0923840238</th>
+							<th>07/30/2019 3:02:39</th>
+							<th> None </th>
+							<th>Missing Buttons</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>	
+
+
+
 
 <script>
 var dropdown = document.getElementsByClassName("dropdown");

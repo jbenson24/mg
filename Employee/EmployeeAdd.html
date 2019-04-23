@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeAdd.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<title>WC Garm Mgmt</title>
+</head>
+ 
+<body>
+	<div class="topnav">
+		<img id="TopLogo" src="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Logo.jpg" alt="">
+			<a class="active" id="AddEmployee" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeAdd.html">Add</a>
+			<a id="EditEmployee" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeEdit.html">Edit</a>
+			<a id="DeleteEmployee" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Employee\EmployeeDelete.html">Delete</a>
+			<a id="Index" href="Index.html">Exit</a>
+			<a id="Back" href="C:/Users/gaine/OneDrive/Desktop/Database%20Stuff/Webpages/Employee/EmployeeGarmentSearch.html">Back</a>
+	</div>			
+	
+	<div class="sidebar">
+		<a class="dropdown">Garment</a>
+			<div class="dropdown-container">
+				<a id="AddGarmentMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\AddGarm.html">Add</a>
+				<a id="EditGarmentMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\EditGarm.html">Edit</a>
+				<a id="DeleteGarmentMenu" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Garment\DeleteGarm.html">Delete</a>
+			</div>
+		<a class="active">Employee</a>
+		<a class="dropdown">Activity</a>
+			<div class="dropdown-container">
+				<a class="dropdown">Search</a>
+					<div class="dropdown-container">
+						<a id="SearchGarmAct" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Activity\ActivityGarmSearch.html">Garment</a>
+						<a id="SearchEmpAct" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Activity\ActivityEmpSearch.html">Employee</a>
+					</div>
+				<a id="LoanerAct" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Activity\ActivityEmpLoaner.html">Loaner</a>
+				<a id="OneForOne" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Activity\ActivityEmpOneForOne.html">1-For-1</a>
+			</div>
+		<a class="dropdown">Orders/Purchases</a>
+			<div class="dropdown-container">
+				<a class="dropdown">Search</a>
+					<div class="dropdown-container">
+						<a id="SearchEmpOrdPur" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\OrdersPurchases\OrdPurEmpSearch.html">Employee</a>
+						<a id="SearchGarmOrdPur" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\OrdersPurchases\OrdPurGarmSearch.html">Garment</a>
+					</div>
+				<a id="ReoderOrdPur" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\OrdersPurchases\OrdPurReOrder.html">Reorder</a>
+				<a id="PurchaseOrdPur" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\OrdersPurchases\OrdPurPurchase.html">Purchase</a>
+				<a id="FindOrdPur" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\OrdersPurchases\OrdPurFindOrder">Find</a>
+			</div>
+		<a class="dropdown">Cleaning</a>
+			<div class="dropdown-container">
+				<a id="CheckInCleaning" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Cleaning\CleaningCheckIn.html">CheckIn</a>
+				<a id="ShipCleaning" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Cleaning\CleaningShipped.html">Shipped</a>
+				<a id="RecleanCleaning" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Cleaning\CleaningReclean.html">Reclean</a>
+				<a id="ReceivedCleaning" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Cleaning\CleaningReceived.html">Received</a>
+			</div>
+		<a class="dropdown">Repairs</a>
+			<div class="dropdown-container">
+				<a id="AddRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\AddRepairs.html">Add</a>
+				<a id="FindRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\FindRepairs.html">Find</a>
+				<a id="CompleteRepairs" href="C:\Users\gaine\OneDrive\Desktop\Database Stuff\Webpages\Repairs\CompleteRepairs.html">Complete</a>
+			</div>
+		<a href="#Reports">Reports</a>
+	</div>
+
+
+	<div class="container">
+		<h1>Add Employee: </h1>
+		
+		<div class="row1">
+			<h2>Employee Contact Information</h2>
+			
+			<div class="column-1">
+				<div class="inner-wrap">
+					<label>First Name <br> <input type="text" name="EmpFirstName" /></label>
+						<br>
+					<label>Middle Int: <br> <input type="text" name="EmpMidInt" /></label>
+						<br>
+					<label>Last Name <br> <input type="text" name="EmpLastName" /></label>
+						<br>
+					<label>Email <br> <input type="text" name="EmpAddress" /></label>
+	   					<br>
+	   				<label>Phone <br> <input type="number" name="EmpPhone"/></label>	
+	   					<br>
+				</div>
+			</div>
+
+			<div class="column-2">	
+				<div class="inner-wrap">
+					<label>Emplyee ID <br> <input type="text" name="EmpID" /></label>
+						<br>
+					<label>Alt ID <br> <input type="text" name="EmpAltID" /></label>
+						<br>
+					<label>Department <br> <input type="text" name="EmpDeptID" /></label>
+						<br>
+					<label for="EmpAddress">Address</label>
+						<br>
+	   				<textarea id="EmpAddress" name="EmpAddress" style: width="150"></textarea>
+				</div>
+			</div>
+
+			<div class="column-3">
+					<div class="inner-wrap">
+					<label>Hire Status <br> <input type="text" name="EmpHireStatus"/></label>
+						<br>
+					<label>Start Date <br> <input type="Date" name="EmpStartDate" /></label>
+						<br>
+					<label>Job <br> <input type="text" name="EmpJob" /></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row2">
+			<h2>Employee Garment Information </h2>
+
+				<div class="column-1">
+					<div class="inner-wrap"> 
+						<form action="" class="GenderForm">
+							<label>Gender</label> 
+								<br>
+									<input type="radio" name="gender" value="male"> Male <br>
+									<input type="radio" name="gender" value="female"> Female <br>
+									<input type="radio" name="gender" value="other"> Other
+						</form>
+						<br>
+					</div>
+				</div>
+
+				<div class="column-2">
+					<div class="inner-wrap">
+						<label>Shirt Size </label>
+						<br> 
+							<select>
+								<option value="xsmall">X-Small</option>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+								<option value="xlarge">X-Large</option>
+								<option value="xxlarge">XX-Large</option>
+							</select>
+							<br>
+							<br>
+						<label>Pant Size </label>
+						<br> 
+							<select>
+								<option value="xsmall">X-Small</option>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+								<option value="xlarge">X-Large</option>
+								<option value="xxlarge">XX-Large</option>
+							</select>
+						<br>
+					</div>
+				</div>
+			
+				<div class="column-3">
+					<div class="inner-wrap">
+						<label>Vest Size <br> </label>
+							<select>
+								<option value="xsmall">X-Small</option>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+								<option value="xlarge">X-Large</option>
+								<option value="xxlarge">XX-Large</option>
+							</select>
+					<br>
+					<br>
+						<label>Pant Length </label>
+					<br> 
+							<select>
+								<option value="xsmall">X-Small</option>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+								<option value="xlarge">X-Large</option>
+								<option value="xxlarge">XX-Large</option>
+							</select>
+						<br>			
+					</div>
+				</div>
+			
+				<div class="column-4">
+					<div class="inner-wrap">
+						<label>Coat Size </label>
+						<br> 
+							<select>
+								<option value="xsmall">X-Small</option>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+								<option value="xlarge">X-Large</option>
+								<option value="xxlarge">XX-Large</option>
+							</select>
+					</div>
+				</div>
+			</div>
+
+			<div class=row3>
+			   	<textarea id="Comments" name="comments" placeholder="Add Comments/Alterations" style="height:200px"></textarea>
+			   		<br>
+			   	<button id="AddEmp" type="button">Add</button>
+			</div>
+			
+		</div>	    
+
+
+		
+		
+	</div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+
+function AutoShipConfirmation() {
+	var r = confirm("Clicking OK will TURN ON\nAutomating Shippments!\n(This expedites cleaning approvals)");
+}
+
+function ShippmentConfirmation() {
+	var x = confirm("Ready to ship garments?"); //add timestamp 
+}
+</script>
+
+
+</body>
+</html>
