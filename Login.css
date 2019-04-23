@@ -15,7 +15,7 @@ object, video {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("https://github.com/gaines23/gaines23.github.io/blob/master/Logo.jpg");
+  background-image: url("Logo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
